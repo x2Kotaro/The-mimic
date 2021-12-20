@@ -1,13 +1,30 @@
-local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/zxciaz/VenyxUI/main/Reuploaded"))()
-local venyx = library.new("Lalam Hud", 5013109572)
+if game:GetService("CoreGui"):FindFirstChild("BAMBO HUB") then
+   game:GetService("CoreGui"):FindFirstChild("BAMBO HUB"):Destroy()
+end
+local UILib = loadstring(game:HttpGet('https://raw.githubusercontent.com/For4za511/The-mimic/main/BAMBO%20HUB.lua'))()
 
-local page = venyx:addPage("Chapter I", 5012544693)
-local section1 = page:addSection("Cupter1")
+local win = UILib:Window("BAMBO HUB",Color3.fromRGB(44, 120, 224), Enum.KeyCode.RightControl)
+local MainSection = win:Tab("Chapter1")
 
-section1:addButton("Go to Cupter2", function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3463.08643, 37.4033813, -1536.49719, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+MainSection:Button("Teleport1", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3485.66748, 38.7796898, -1537.48657, -0.177830324, 0.207676932, -0.961897433, -4.61665284e-09, 0.977477252, 0.211040676, 0.984061182, 0.037529435, -0.1738251)
 end)
-local section1 = page:addSection("Cupter1")
-section1:addButton("END", function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1254.85413, 199.540024, -2536.45215, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+
+MainSection:Button("Teleport2", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1272.52124, 199.539978, -2536.65088, -0.103745475, -6.99573235e-08, -0.994603872, -1.43990482e-08, 1, -6.88349289e-08, 0.994603872, 7.18003745e-09, -0.103745475)
 end)
+
+local MainSection1 = win:Tab("Chapter2")
+
+MainSection1:Button("Teleport1", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(77.4887772, 48.7147331, -1602.84656, 0.999641716, -0.00711929612, 0.025802942, 1.20098411e-08, 0.963980854, 0.26597172, -0.0267670732, -0.265876412, 0.963635445)
+end)
+
+MainSection1:Button("Teleport2", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(234.830933, 99.0160828, -588.336975, 0.99253881, -0.0515349619, 0.110502765, 1.35842928e-08, 0.906286836, 0.422663122, -0.121929131, -0.41950956, 0.899524868)
+end)
+
+MainSection1:Button("Teleport3", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(867.300232, 76.848587, -352.897644, -0.0245152973, 0.206289828, -0.978183806, -7.92620636e-09, 0.978477836, 0.206351846, 0.999699473, 0.0050587845, -0.0239876732)
+end)
+
